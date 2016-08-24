@@ -3,7 +3,7 @@ var http;
 var ajaxReq = function() {}
 ajaxReq.http = null;
 ajaxReq.postSerializer = null;
-ajaxReq.SERVERURL = "https://rpc.myetherwallet.com/api.php";
+ajaxReq.SERVERURL = "https://rpc.classicetherwallet.com/api.php";
 //ajaxReq.DAOPROPOSALSURL = "https://rpc.myetherwallet.com/TheDAO/getDAOProposals.php";
 ajaxReq.COINMARKETCAPAPI = "https://coinmarketcap-nexuist.rhcloud.com/api/";
 ajaxReq.pendingPosts = [];
