@@ -16,6 +16,7 @@ nodes.nodeTypes = {
     EXP: "EXP",
     UBQ: "UBQ",
     PIRL: "PIRL",
+    ETSC: "ETSC",
     Custom: "CUSTOM ETH"
 };
 nodes.tldTypes = {
@@ -259,6 +260,19 @@ nodes.nodeList = {
         'estimateGas': true,
         'service': 'pirl.io',
         'lib': new nodes.customNode('https://wallrpc.pirl.io', '')
+    },
+    'etsc': {
+        'name': 'ETSC',
+        'blockExplorerTX': 'https://explorer.ethereumsocial.kr/#/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://explorer.ethereumsocial.kr/#/address/[[address]]',
+        'type': nodes.nodeTypes.ETSC,
+        'eip155': true,
+        'chainId': 214,
+        'tokenList': require('./tokens/etscTokens.json'),
+        'abiList': require('./abiDefinitions/etscAbi.json'),
+        'estimateGas': true,
+        'service': 'gazua.tv',
+        'lib': new nodes.customNode('https://node.ethereumsocial.kr', '')
     }
 };
 

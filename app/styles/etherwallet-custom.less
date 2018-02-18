@@ -496,6 +496,7 @@ label small {
 @brand-music-dark: #849205;
 @brand-ubq: #00ad85;
 @brand-ubq-dark: #0e7a61;
+@brand-etsc: #673ab7;
 @brand-cust: #b50085;
 @brand-cust-dark: #66054c;
 
@@ -535,6 +536,9 @@ label small {
   }
   li:nth-child(14) {
     border-left: 2px solid @brand-ubq;
+  }
+  li:nth-child(15) {
+    border-left: 2px solid @brand-etsc;
   }
   li:last-child {
     border-left: 2px solid @brand-cust;
@@ -651,4 +655,14 @@ header.MUSIC {
   & + .container .btn-primary            { background:@brand-music; border-color:@brand-music;            }
   & + .container .btn-info               { background:@brand-music-dark; border-color:@brand-music-dark;    } 
   .header-branding                       { background:@brand-music;                                       }
+}
+
+header.ETSC {
+  border-top: 0.25rem solid @brand-etsc;
+  & + .container + .pre-footer + .footer { border-top: 0.25rem solid @brand-etsc;                        }
+  & + .container .modal-content          { border: 0.25rem solid @brand-etsc;                            }
+  & + .container .alert-info             { background-color:@brand-etsc;                                 }
+  & + .container .btn-primary            { background:@brand-etsc; border-color:@brand-etsc;            }
+  & + .container .btn-info               { background:@brand-etsc-dark; border-color:@brand-etsc-dark;    }
+  .header-branding                       { background:@brand-etsc;                                       }
 }
